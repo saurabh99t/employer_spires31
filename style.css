@@ -1,0 +1,146 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-section label,
+.filter-section input,
+.filter-section button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.cards-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: 30%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/* Apply basic styles and layout to the filter and card containers */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+  
+  .filter-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filter-container label {
+    margin-right: 10px;
+  }
+  
+  .filter-container input[type="text"],
+  .filter-container button {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filter-container input[type="text"]::placeholder {
+    color: #999;
+  }
+  
+  .filter-container input[type="text"]:focus,
+  .filter-container button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 10px;
+  }
+  
+  .job-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    
+  }
+
+
+  .title-div p{
+font-size: 2rem;
+font-weight: 600;
+margin-left: 10px;
+  }
+
+
+  .job-card img{
+height: 100px;
+width: 100px;
+  }
+
+  .img-title-div{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  
+  .job-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .job-card h3 {
+    margin-top: 0;
+  }
+  
+  /* Add more styling as per your requirements */
+  /* Add responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .cards-section {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .filter-container {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
